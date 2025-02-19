@@ -68,10 +68,10 @@ Here we are requesting
 The next lines set up the environment to run our job.
 ```bash
 module purge
-module load anaconda
+module load miniforge
 ```
 
-It is good practice to purge all modules first, since Slurm "remembers" any modules set in the environment where the script is launched.  Next we load the module we need to run our program, the Python distribution Anaconda.
+It is good practice to purge all modules first, since Slurm "remembers" any modules set in the environment where the script is launched.  Next we load the module we need to run our program, the Python distribution Miniforge.
 
 Finally, we execute our job.
 ```bash
@@ -132,7 +132,7 @@ For example:
 
 ```
 $ module load matlab
-$ module load anaconda
+$ module load miniforge
 $ module load goolf R
 ```
 Modules need to be loaded any time that a new shell is created to set up the same working environment. This includes every time that you log out and back in, and every time that you run a batch job on a compute node.
@@ -201,7 +201,7 @@ Use the File Manager to create, rename, or move your folders.
 
 #### Command Line
 
-If you are familiar with the command line, you can use that. If you wish to learn it, you can go through our [Unix Tutorials for Beginners](https://learning.rc.virginia.edu/notes/unix-tutorial/), especially Tutorials 1--3.  You can also go through our [HPC from the Terminal](https://learning.rc.virginia.edu/tutorials/rivanna-command-line/) tutorial if you have not already done so.
+If you are familiar with the command line, you can use that. If you wish to learn it, you can go through our [Unix Tutorials for Beginners](https://learning.rc.virginia.edu/notes/unix-tutorial/), especially Tutorials 1--3.  You can also go through our [HPC from the Terminal](https://learning.rc.virginia.edu/tutorials/hpc-from-terminal/) tutorial if you have not already done so.
 
 #### Changing into a Directory
 
